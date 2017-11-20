@@ -15,4 +15,10 @@ class CarsController < Sinatra::Base
     erb :'cars/home'
   end
 
+  get "/cars" do
+    @title = "cars"
+
+    erb :'cars/index'
+  end
+
 end
