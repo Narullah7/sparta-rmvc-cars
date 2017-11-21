@@ -18,6 +18,8 @@ class CarsController < Sinatra::Base
   get "/cars" do
     @title = "cars"
 
+   @cars = Cars.all
+
     erb :'cars/index'
   end
 
