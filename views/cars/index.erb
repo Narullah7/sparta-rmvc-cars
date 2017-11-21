@@ -1,0 +1,8 @@
+<h1>List of Cars</h1>
+<% @cars.each do |cars| %>
+<div>
+  <h3><a href="/<%= cars.id %>"><%= cars.title %></a></h3>
+  <p><%= cars.body %></p>
+  <img src="<%= cars.image %>" alt="">
+</div>
+<% end %>
